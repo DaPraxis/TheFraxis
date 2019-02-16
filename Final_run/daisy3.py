@@ -276,17 +276,10 @@ def random_random_100_input():
         indicator.append(list(np.random.randint(3, size=1001)))
     return output, indicator 
                  
-def train_one_car_model_final(car_model):
-    output = []
-    indicator=[]
-    for i in range (10000):
-        output.append(list(np.random.random(1001)))
-        indicator.append(list(np.random.randint(3, size=1001)))
-    best_score = 1000000000
-    all_info=[]
-    score, current_car_info = one_car_training(data, car_model, acc_input, indicator)
-    if (score<best_score)&(score!=0):
-        print("the best score for car model {} is {}".format(car_model[0],score)) 
-    elif (score == 0):
-        print("car model {} failed".format(car_model[0]))
-    cur< nnb
+    
+
+init()
+    # randommization  
+acc_input, indicator = random_random_100_input()
+all_info = all_cars_training(acc_input, indicator)
+    
